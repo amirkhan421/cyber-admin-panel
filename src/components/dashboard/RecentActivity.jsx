@@ -1,4 +1,4 @@
-import { ShieldAlert, shieldCheck, AlertTriangle } from 'lucide-react';
+import { ShieldAlert, AlertTriangle } from 'lucide-react';
 import { format } from 'date-fns'; // We might not have date-fns, lets use native Date
 
 const RecentActivity = ({ threats }) => {

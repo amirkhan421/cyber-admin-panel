@@ -1,14 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  color-scheme: dark;
+@theme {
+  --color-cyber-dark: #0f172a;
+  --color-cyber-darker: #020617;
+  --color-cyber-light: #e2e8f0;
+  --color-cyber-primary: #0ea5e9;
+  --color-cyber-secondary: #6366f1;
+  --color-cyber-accent: #10b981;
+  --color-cyber-danger: #ef4444;
+  --color-cyber-warning: #f59e0b;
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 body {
-  background-color: #020617; /* slate-950 */
-  color: #f8fafc;           /* slate-100 */
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  @apply bg-slate-950 text-slate-100 font-sans antialiased;
 }
